@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>RESUME BUILDER</h1>
+
+    <form id="resume-form">
+      <h2 class="heading">Personal Information </h2>
+      <input type="text" class="inputs" placeholder="Full Name" id="name" required>
+      <input type="email" class="inputs" placeholder="Email" id="email" required>
+      <input type="tel" class="inputs" placeholder="Phone" id="phone">
+
+      <h2 class="heading">Education</h2>
+      <input type="text" class="inputs" placeholder="Degree" id="degree">
+      <input type="text" class="inputs" placeholder="Institution" id="institution">
+      <input type="text" class="inputs" placeholder="Year" id="grad-year">
+
+      <h2 class="heading">Skills (comma separated)</h2>
+      <input type="text" class="inputs" id="skills" placeholder="e.g. HTML, CSS, JS">
+
+      <h2 class="heading">Projects</h2>
+      <input type="text" class="inputs" placeholder="Project Title" id="project-title">
+      <textarea placeholder="Project Description" class="inputs" id="project-desc"></textarea>
+
+      <button type="submit">Generate Resume</button>
+    </form>
+
+    <div id="resume-preview" class="resume hidden">
+      <h2 id="preview-name"></h2>
+      <p><strong>Email:</strong> <span id="preview-email"></span></p>
+      <p><strong>Phone:</strong> <span id="preview-phone"></span></p>
+
+      <h3>Education</h3>
+      <p id="preview-education"></p>
+
+      <h3>Skills</h3>
+      <ul id="preview-skills"></ul>
+
+      <h3>Projects</h3>
+      <p><strong id="preview-project-title"></strong></p>
+      <p id="preview-project-desc"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
