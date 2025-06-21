@@ -44,7 +44,7 @@ button {
     border: 2px solid blue;
     background-color: blue;
     text-align: center;
-    width: 300px;
+    width: 40%;
     padding: 5px;
     color: white;
     border-radius: 10px;
@@ -70,6 +70,6 @@ h1 {
 
 .inputs {
     background-color: rgb(228, 226, 226);
-    width: 550px;
+    width: 80%;
     border-radius: 10px;
 }
